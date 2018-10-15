@@ -165,13 +165,6 @@ class AdsController extends Controller
 
     }
 
-    public function search(Request $request)
-    {
-        $type = $request->input('type');
-        $data = Ad::where('type', 'LIKE', "%$type%")->get();
-        return $data;
-    }
-
     public function filter(Request $request)
     {
         $sex = request('sex');
@@ -226,7 +219,7 @@ class AdsController extends Controller
             ];
         }
 
-        $results = $ads->whereIn('sex', (array) $sex)->whereIn('age', (array) $age)->whereIn('location', (array) $location)->whereIn('type', (array) $type)->simplePaginate(21);
+        $results = $ads->whereIn('sex', (array) $sex)->whereIn('age', (array) $age)->whereIn('location', (array) $location)->whereIn('type', (array) $type)->paginate(21);
 
         return view('results')->with('ads', $results)->with('data', $dropdownData);
 
@@ -243,7 +236,7 @@ class AdsController extends Controller
         SEO::opengraph()->setUrl(url()->current());
         SEO::setCanonical(url()->current());
         SEO::opengraph()->addProperty('type', 'website');
-        SEO::addImages('http://udomi.net/' . $ad->photos->first()->filename);
+        SEO::addImages('https://udomi.net/' . $ad->photos->first()->filename);
 
         $slike = [];
 

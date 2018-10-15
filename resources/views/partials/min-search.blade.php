@@ -1,4 +1,4 @@
-<form action="/results" method="post">
+<form action="/results" method="get">
   {{ csrf_field() }}
 
 <div class="grid-x grid-margin-x search small-up-12 large-up-5">
