@@ -28,7 +28,7 @@
     <div class="grid-container">
       <div class="grid-x">
         <div class="cell">
-          {{ $ads->links('pagination.simple-default') }}
+          {{ $ads->appends(request()->input())->links('pagination.simple-default') }}
         </div>
       </div>
     </div>
