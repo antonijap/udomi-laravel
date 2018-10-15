@@ -14,7 +14,7 @@
             <li><a href="/register" class="item">Registracija</a></li>
           @endguest
           <li><a href="/ads/new" class="item">Novi oglas</a></li>
-          <li><a href="/about" class="item">O Projektu</a></li>
+          <li><a href="/about" class="item">Projekt</a></li>
         </ul>
       </div>
 
@@ -22,7 +22,7 @@
         <div class="top-bar-right">
           <ul class="medium-horizontal vertical dropdown menu" data-responsive-menu="accordion medium-dropdown">
             <li>
-              <a href="/{{Auth::user()->clean(Auth::user()->username)}}/{{Auth::user()->id}} <i class="ion-ios-arrow-down arrow-down"></i></a>
+              <a href="/{{Auth::user()->clean(Auth::user()->username)}}/{{Auth::user()->id}}">{{Auth::user()->name}} <i class="ion-ios-arrow-down arrow-down"></i></a>
               <ul class="menu vertical main-dropdown">
                 <a href="/{{Auth::user()->clean(Auth::user()->username)}}/{{Auth::user()->id}}">Moj Profil</a>
                 <a href="/dashboard">Moji oglasi</a>
