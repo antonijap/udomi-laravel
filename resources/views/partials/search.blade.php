@@ -7,6 +7,7 @@
         @guest
             <a href="/register" class="button large CTA">Predaj oglas</a>
         @endguest
+        
         @auth
             <a href="/ads/new" class="button large CTA">Predaj oglas</a>
         @endauth
