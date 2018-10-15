@@ -1,0 +1,372 @@
+$topbar-background: white;
+$header-font-family: 'Roboto';
+$header-font-weight: 500;
+$global-radius: 4px;
+$primary: #23D160;
+$tab-item-font-size: 1em;
+$tab-background-active: none;
+$tab-color: black;
+$dropdownmenu-padding: 1.2em;
+$dropdownmenu-arrows: false;
+$buttongroup-spacing: 5px;
+
+@import '../foundation-sites/scss/foundation';
+@include foundation-everything(true);
+
+.dashboard-ad-has-bottom-border {
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 2em;
+}
+
+.pagination {
+    padding-top: 1em;
+    border-top: 1px solid #efefef;
+}
+
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+
+.logo  {
+  width: 4em;
+}
+
+.pagination {
+  margin-top: 2em;
+}
+
+.intro {
+  .title {
+    font-weight: 500;
+  }
+  .subtitle {
+    padding-top: .5em;
+  }
+}
+
+p.photos-error {
+  color: red;
+}
+
+.fileuploader {
+  padding: 0;
+
+  .fileuploader-input {
+    margin-bottom: 1em;
+  }
+
+  .columns {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.flash-message {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: $primary;
+  padding: 1em;
+  z-index: 10;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.has-bottom-border {
+  border-bottom: 1px solid #efefef;
+}
+
+.has-top-border {
+  border-top: 1px solid #efefef;
+}
+
+.is-gray {
+  background: #fbfbfb;
+}
+
+.navbar {
+  a {
+    color: black;
+    font-weight: 500;
+
+    &:hover {
+      color: #FD9800;
+    }
+  }
+}
+
+.is-500 {
+  font-weight: 500;
+}
+
+.intro {
+  padding: 1em 0 1em;
+  @include breakpoint(medium) {
+    padding: 5em 0 5em;
+  }
+}
+
+.CTA {
+  margin-top: .3em;
+  @include breakpoint(medium) {
+    margin-top: 1em;
+  }
+}
+
+.label.positive {
+    background: #c7efd5;
+}
+
+.label.special {
+    background: #f9e8c4
+}
+
+.top {
+  padding: 2em 0 2em;
+}
+
+.social-buttons {
+  margin: 0 0 2em;
+  @include breakpoint(medium) {
+    margin: 2em 0 2em;
+  }
+}
+
+.has-padding {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  @include breakpoint(medium) {
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+}
+
+.search {
+  padding: 1.3em 0 1em;
+}
+
+.search-button {
+  top: 1.6em;
+  position: relative;
+}
+
+footer {
+  padding: 3em 0 1em;
+
+  .cell {
+    margin-bottom: 2em;
+    @include breakpoint(medium) {
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.input-helper {
+  display: block;
+  color: gray;
+}
+
+.subtitle {
+  color: #717171;
+  font-weight: 400;
+  @include breakpoint(medium) {
+    font-size: 1.3em;
+  }
+}
+
+.top-bar {
+  a {
+    color: black;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+  .item {
+    color: black;
+    position: relative;
+    top: 4px;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+
+.animal {
+  h2 {
+    font-size: 1em;
+    margin-bottom: 0;
+    color: #949494;
+  }
+
+  .has-margin {
+    margin-bottom: 2em;
+    @include breakpoint(medium) {
+      margin-bottom: 0;
+    }
+  }
+
+  .has-right-padding {
+    @include breakpoint(medium) {
+      padding-right: 3em;
+    }
+  }
+}
+
+.label {
+  background: #e5e5e5;
+  color: black;
+}
+
+.new {
+  label {
+    font-weight: 600;
+    @include breakpoint(medium) {
+      font-size: 1em;
+    }
+  }
+}
+
+.edit {
+  label {
+    font-weight: 600;
+    @include breakpoint(medium) {
+      font-size: 1em;
+    }
+  }
+}
+
+.fileuploader-input-button {
+  background: $primary;
+}
+
+.fileuploader-input-caption {
+  color: $primary;
+}
+
+.callout {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.card {
+  h4 {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: black;
+    font-weight: 500;
+    &:hover {
+      color: $primary;
+
+    }
+  }
+}
+
+.card-image {
+  object-fit: cover;
+  height: 270px;
+  min-width: 100%;
+}
+
+* {
+  outline:0;
+}
+
+h3 {
+  font-weight: 500;
+  @include breakpoint(medium) {
+    font-size: 1.5em;
+  }
+}
+
+.small-image {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: auto;
+
+  @include breakpoint(medium) {
+    max-width: 10em;
+    max-height: 6em;
+  }
+}
+
+.has-bottom-margin {
+  margin-bottom: 1em;
+}
+
+.tabs {
+  .is-active {
+    border-bottom: 2px $primary solid;
+    color: $primary;
+  }
+}
+
+.js-dropdown-active {
+  border-radius: 4px;
+  box-shadow: 0px 0px 15px -6px rgba(0,0,0,0.24);
+  border: 1px solid #efefef;
+}
+
+.main-dropdown {
+  a {
+    border-bottom: 1px solid #efefef;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.arrow-down {
+  color: #b9b9b9;
+  top: 1px;
+  position: relative;
+  left: 4px;
+}
+
+.title-bar {
+  background: white;
+  color: black;
+}
+
+.menu {
+  .is-active {
+    a {
+      background: none;
+      color: black;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.hamburger {
+  font-size: 2em;
+  padding-right: .3em;
+}

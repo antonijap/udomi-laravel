@@ -1,0 +1,62 @@
+{
+  "_from": "jquery-text-counter",
+  "_id": "jquery-text-counter@0.7.0",
+  "_inBundle": false,
+  "_integrity": "sha1-fQuQ7n+oOkyAv2EerAFupBxDaEU=",
+  "_location": "/jquery-text-counter",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "jquery-text-counter",
+    "name": "jquery-text-counter",
+    "escapedName": "jquery-text-counter",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery-text-counter/-/jquery-text-counter-0.7.0.tgz",
+  "_shasum": "7d0b90ee7fa83a4c80bf611eac016ea41c436845",
+  "_spec": "jquery-text-counter",
+  "_where": "/Users/antonijapek/Development/Valet/udomi-laravel",
+  "author": {
+    "name": "ractoon",
+    "url": "http://www.ractoon.com"
+  },
+  "bugs": {
+    "url": "https://github.com/ractoon/jQuery-Text-Counter/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "jquery": ">=1.5"
+  },
+  "deprecated": false,
+  "description": "jQuery plugin to count text/characters in a textarea or input. Allows error notifications on minimum or maximum number of characters/words.",
+  "homepage": "https://github.com/ractoon/jQuery-Text-Counter",
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "words",
+    "characters",
+    "counter",
+    "minimum",
+    "maximum"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/ractoon/jQuery-Text-Counter/blob/master/LICENSE.md"
+    }
+  ],
+  "name": "jquery-text-counter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ractoon/jQuery-Text-Counter.git"
+  },
+  "title": "jQuery Text Counter",
+  "version": "0.7.0"
+}
