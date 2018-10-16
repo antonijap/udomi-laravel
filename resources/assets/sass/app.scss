@@ -18,7 +18,10 @@ $buttongroup-spacing: 5px;
 }
 
 .header-image {
-  background: url("/storage/header-image.jpg") no-repeat center;
+  background: url("/storage/header-image.jpg") no-repeat bottom;
+  @include breakpoint(medium) {
+    background: url("/storage/header-image.jpg") no-repeat center;
+  }
 }
 
 .dashboard-ad-has-bottom-border {
