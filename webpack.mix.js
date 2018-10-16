@@ -13,7 +13,7 @@ let ImageminPlugin = require( 'imagemin-webpack-plugin' ).default;
  */
 
 mix.sass('resources/assets/sass/app.scss', 'public/css')
-   .browserSync('udomi-laravel.dev')
+   .browserSync('udomi.dev')
   //  .js('resources/assets/js/app.js', 'public/js');
   .scripts([
     'node_modules/jquery/dist/jquery.js',
