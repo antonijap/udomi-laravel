@@ -6,7 +6,7 @@
         <div class="small-12 medium-auto cell">
           <h4>Udomi.net</h4>
           <p>Najbolji oglasnik za životinje.</p>
-          <p>Copyright (c) 2017 Udomi.net All Rights Reserved.</p>
+          <p>Copyright (c) 2017 - 2018 Udomi.net All Rights Reserved.</p>
         </div>
 
         <div class="small-12 medium-auto cell">
