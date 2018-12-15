@@ -1,8 +1,6 @@
 <div class="card">
     @if ($ad->user->username)
       <a href="/{{$ad->user->clean($ad->user->username)}}/{{$ad->id}}/{{$ad->slug}}">
-    @endif
-
     @php
       $check = 0
     @endphp
@@ -73,6 +71,7 @@
       @else
         <span class="label positive">Čipiran</span>
       @endif
+    @endif
     @endif
   </div>
 </div>
