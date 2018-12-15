@@ -1,5 +1,7 @@
 <div class="card">
-  <a href="/{{$ad->user->clean($ad->user->username)}}/{{$ad->id}}/{{$ad->slug}}">
+    @if ($ad->user->username)
+      <a href="/{{$ad->user->clean($ad->user->username)}}/{{$ad->id}}/{{$ad->slug}}">
+    @endif
 
     @php
       $check = 0
@@ -10,7 +12,7 @@
         @php
           $check = 1
         @endphp
-      @endif
+      
     @endforeach
 
     @if ($check != 1)

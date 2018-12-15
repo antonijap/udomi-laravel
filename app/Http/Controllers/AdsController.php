@@ -222,7 +222,6 @@ class AdsController extends Controller
         $results = $ads->whereIn('sex', (array) $sex)->whereIn('age', (array) $age)->whereIn('location', (array) $location)->whereIn('type', (array) $type)->paginate(21);
 
         return view('results')->with('ads', $results)->with('data', $dropdownData);
-
     }
 
     public function show($username, $id, $slug)
