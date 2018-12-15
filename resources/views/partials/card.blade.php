@@ -1,6 +1,6 @@
 <div class="card">
-
-  {{$ad}}
+    @if ($ad->user == false)
+    {{ad}}
+    @endif
   
-  </div>
 </div>
