@@ -1,6 +1,6 @@
 <div class="card">
     @if ($ad->user == false)
-    {{ad}}
+    {{$ad}}
     @endif
   
 </div>
